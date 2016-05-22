@@ -1,0 +1,799 @@
+$blue: rgb(27, 180, 189);
+$grey: rgb(241, 239, 240);
+$margin: 0 37px;
+ul{
+  list-style-type: square;
+}
+#application {
+  background: lightgrey;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+input::-webkit-input-placeholder {color:#E76426;}
+input::-moz-placeholder          {color:#E76426;}
+input:-moz-placeholder           {color:#E76426;}
+input:-ms-input-placeholder      {color:#E76426;}
+textarea::-webkit-input-placeholder {color:#E76426;}
+textarea::-moz-placeholder          {color:#E76426;}
+textarea:-moz-placeholder           {color:#E76426;}
+textarea:-ms-input-placeholder      {color:#E76426;}
+
+.backgroundImg {
+  background-image: url(img/background.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.hideImg {
+  img {
+    display: none;
+  }
+  .enroll {
+    background: $blue;
+  }
+  .rightPanel {
+    .order {
+      padding-top: 98px;
+    }
+    .freqQuestions {
+      padding-top: 75px;
+    }
+    .ask {
+      padding-top: 85px;
+    }
+  }
+  .illnesses {
+    background: white;
+    color: black;
+    .illnessesInfo {
+      display: inherit;
+      background: white;
+      color: black;
+    }
+    .illnessesBtn {
+      position: relative;
+      top: -80px;
+
+    }
+  }
+  .illnesses:hover {
+    .illnessesBtn {
+      background: rgba(27, 180, 189, 0.90);
+      margin: 0;
+    }
+  }
+  .diagnostic {
+    background: white;
+    color: black;
+    .diagnosticInfo {
+      display: inherit;
+      background: white;
+      color: black;
+    }
+    .diagnosticBtn {
+      position: relative;
+      top: -80px;
+    }
+  }
+  .diagnostic:hover {
+    .diagnosticBtn {
+      background: rgba(27, 180, 189, 0.90);
+      margin: 0;
+    }
+  }
+  .recommendations {
+    background: white;
+    color: black;
+    .recommendationsInfo {
+      display: inherit;
+      background: white;
+      color: black;
+    }
+    .recommendationsBtn {
+      position: relative;
+      top: -80px;
+    }
+  }
+  .recommendations:hover {
+    .recommendationsBtn {
+      background: rgba(27, 180, 189, 0.90);
+      margin: 0;
+    }
+  }
+  .advantages {
+    .advInfo{
+      .advInfoTextElem{
+        img{
+          display: inline;
+        }
+      }
+    }
+    .advFooter{
+      img {
+        display: inline;
+      }
+    }
+  }
+  .doctors{
+    .doctor{
+      background: white;
+      color: black;
+      .docHide{
+        display: inherit;
+        background: white;
+        color: black;
+      }
+      .docInfo{
+        position: relative;
+        top: -112px;
+      }
+      .docInfo:hover{
+        top: -112px;
+      }
+    }
+  }
+  .askForm{
+    img{
+      display: block;
+    }
+  }
+}
+.fontDisabled{
+  font-size: 20px;
+  .headerAddress{
+    align-items: center;
+  }
+  #inputForm{
+    font-size: 20px;
+    #menuInput{
+      font-size: 20px;
+    }
+  }
+  .enroll{
+    font-size: 22px;
+  }
+  .illnesses{
+    .illnessesInfo{
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+  .diagnostic{
+    .diagnosticInfo{
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+  .recommendations{}
+  .rightPanel{
+    font-size: 16px;
+  }
+  .advantages{
+    .advInfo{
+      .advInfoText{
+        font-size: 18px;
+        margin: 10px 10px 0 20px;
+      }
+    }
+    .advFooter{
+      .centerInfo{
+        width: 840px;
+        .advFooterInfo{
+          font-size: 22px;
+        }
+        .methods{
+          font-size: 36px;
+        }
+
+      }
+    }
+  }
+  .doctors{
+    .doctor{
+      .docHide{
+        font-size: 20px;
+      }
+
+      .docInfo{
+        .lastName{
+          font-size: 36px;
+        }
+        .firstName{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .onMap{
+    bottom: 110px;
+    .mapInfo{
+      font-size: 20px;
+    }
+  }
+
+}
+
+#inputForm{
+  width: 220px;
+  height: 58px;
+  #menuInput{
+    width: 220px;
+    height: 58px;
+    padding: 20px 55px 20px 20px;
+    color: rgb(231, 100, 38);
+    border: 1px solid rgb(231, 100, 38);
+    outline: none;
+    font-size: 15px;
+  }
+  img {
+    position: relative;
+    top: -58px;
+    left: 160px;
+
+  }
+  img:hover{
+    cursor: pointer;
+  }
+}
+.container {
+  background: white;
+  position: relative;
+  padding: 0;
+  //height: 2500px;
+  width: 1024px;
+
+}
+.disabled {
+  position: fixed;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 1024px;
+  padding: 10px 37px;
+  background: $grey;
+  z-index: 100;
+  .largeFont {
+    background: white;
+    font-size: 22px;
+    line-height: 1;
+    padding: 2px 6px;
+    cursor: pointer;
+  }
+  .showImages {
+    font-size: large;
+    margin: 0 29px 0 25px;
+    cursor: pointer;
+  }
+
+}
+.onSticky {
+  margin-bottom: 148px;
+}
+.menuHeader {
+  padding: 71px 37px 110px 37px;
+  img {
+    float: left;
+    margin-right: 15px;
+  }
+  .headerName {
+    display: flex;
+    align-items: baseline;
+    h1 {
+      margin: 0;
+    }
+    h3 {
+      margin: 0 0 0 auto;
+      display: flex;
+      div {
+        color: $blue;
+      }
+    }
+  }
+  .headerAddress {
+    margin-top: 3px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    img {
+      margin-left: 10px;
+      float: none;
+    }
+  }
+}
+#menu {
+  padding: 5px 37px;
+  background: white;
+  z-index: 100;
+
+  width: 1024px;
+  .firstRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+  }
+  .secondRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+  }
+  .menuButton {
+    width: 220px;
+    height: 58px;
+    cursor: pointer;
+    border: solid $grey;
+    border-width: 5px 2px 2px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .menuButton:hover {
+    border-top-color: $blue;
+    font-weight: bold;
+  }
+}
+.menu {
+}
+.menuSticky {
+  position: fixed;
+  top: 46px;
+}
+.enroll {
+  height: 100px;
+  margin: 5px 37px 0 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: larger;
+  background-image: url(img/enrollBackground.png);
+  background-size: cover;
+}
+.enroll:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+%showInfoBlocks {
+  height: 180px;
+  width: 224px;
+  color: $blue;
+  padding-left: 15px;
+  padding-right: 20px;
+  div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .text {
+      cursor: default;
+      width: 120px;
+    }
+  }
+}
+%separator {
+  height: 4px;
+  width: 224px;
+  margin: 8px 0;
+}
+.info {
+  margin: 60px 37px 0 37px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: space-between;
+}
+.illnesses {
+  width: 460px;
+  height: 300px;
+  background: url(img/illnessesBg.png);
+  background-size: cover;
+
+  .illnessesInfo {
+    height: 300px;
+    padding: 30px 15px 0 15px;
+    font-size: 15px;
+    background: rgba(38, 55, 56, 0.85);
+    color: white;
+    position: relative;
+    z-index: 5;
+    display: none;
+    ul {
+      margin-top: 0px;
+      padding-left: 22px;
+      li {
+        margin-top: 3px;
+      }
+    }
+  }
+  .illnessesBtn {
+    height: 60px;
+    font-size: larger;
+    color: white;
+    background: rgba(27, 180, 189, 0.90);
+    margin: 0 10px;
+    top: 220px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+.illnesses:hover {
+  .illnessesInfo {
+    display: inherit;
+  }
+  .illnessesBtn {
+    top: -80px;
+    margin: 0;
+    background: rgba(27, 180, 189, 0.3);
+  }
+}
+.diagnostic {
+  width: 215px;
+  height: 300px;
+  background: url(img/diagnosticBg.png);
+  .diagnosticInfo {
+    height: 300px;
+    padding: 30px 15px 0 20px;
+    font-size: 15px;
+    background: rgba(38, 55, 56, 0.85);
+    color: white;
+    position: relative;
+    z-index: 5;
+    display: none;
+    ul {
+      margin-top: 0px;
+      padding-left: 20px;
+      li {
+        margin-top: 3px;
+      }
+    }
+  }
+  .diagnosticBtn {
+    height: 60px;
+    font-size: larger;
+    color: white;
+    background: rgba(27, 180, 189, 0.90);
+    margin: 0 10px;
+    top: 220px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+.diagnostic:hover {
+  .diagnosticInfo {
+    display: inherit;
+  }
+  .diagnosticBtn {
+    top: -80px;
+    margin: 0;
+    background: rgba(27, 180, 189, 0.3);
+  }
+}
+.recommendations {
+  width: 700px;
+  height: 260px;
+  background: url(img/recomendationsBg.png);
+  background-size: cover;
+  position: relative;
+  top: -256px;
+
+  .recommendationsInfo {
+    height: 260px;
+    padding: 30px 15px 0 15px;
+    font-size: 15px;
+    background: rgba(38, 55, 56, 0.85);
+    color: white;
+    position: relative;
+    z-index: 5;
+    display: none;
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+      li {
+        margin-top: 3px;
+      }
+    }
+  }
+  .recommendationsBtn {
+    height: 60px;
+    font-size: larger;
+    color: white;
+    background: rgba(27, 180, 189, 0.90);
+    margin: 0 10px;
+    top: 180px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+.recommendations:hover {
+  .recommendationsInfo {
+    display: inherit;
+  }
+  .recommendationsBtn {
+    top: -80px;
+    margin: 0;
+    background: rgba(27, 180, 189, 0.3);
+  }
+}
+.rightPanel {
+  font-size: 14px;
+  .textContainer{
+    width: 195px;
+  }
+  .order {
+    cursor: pointer;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    @extend %showInfoBlocks;
+  }
+  .order:hover {
+    border: 4px solid $blue;
+    font-weight: bold;
+  }
+  .freqQuestions {
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @extend %showInfoBlocks;
+  }
+  .freqQuestions:hover {
+    border: 4px solid $blue;
+    font-weight: bold;
+  }
+  .ask {
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @extend %showInfoBlocks;
+  }
+  .ask:hover {
+    border: 4px solid $blue;
+    font-weight: bold;
+  }
+  .showSeparator {
+    @extend %separator;
+    background: $grey;
+  }
+  .hideSeparator {
+    @extend %separator;
+    background: white;
+  }
+
+}
+.advantages{
+  margin: 45px 37px 0 37px;
+  border-top: 3px solid rgb(231, 100, 38);
+  border-bottom: 3px solid rgb(231, 100, 38);
+  padding-top: 20px;
+  .advTitle{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(231, 100, 38);
+  }
+  .advInfo{
+    width: 90%;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .advInfoText{
+      margin: 10px 40px 0 60px;
+      height: 160px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      .advInfoTextElem {
+        margin: 7px 0;
+      }
+    }
+  }
+  .advFooter{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    .centerInfo{
+
+      margin-left: auto;
+      margin-right: auto;
+      width: 85%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .advFooterInfo{
+        font-size: 20px;
+      }
+      .methods{
+        color: rgb(231, 100, 38);
+        font-size: 30px;
+      }
+    }
+    i{
+      color: rgb(231, 100, 38);
+    }
+  }
+}
+.advantages:hover{
+  cursor: pointer;
+}
+.doctors {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 37px 0 37px;
+  .doctor{
+
+    width: 295px;
+    height: 360px;
+    .docHide{
+      display:none;
+      padding: 30px 15px 0 15px;
+      font-size: 15px;
+      height: 360px;
+      color: white;
+      background: rgba(38, 55, 56, 0.85);
+      ul {
+        margin-top: 10px;
+        padding-left: 20px;
+        li {
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+  .docInfo {
+    height: 92px;
+    font-size: larger;
+    color: white;
+    background: rgba(27, 180, 189, 0.50);
+    margin: 0;
+    top: 248px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .lastName{
+      font-size: 25px;
+    }
+  }
+  .doctor:hover{
+    .docHide{
+      display: inherit;
+    }
+    .docInfo{
+      top: -112px;
+    }
+  }
+  .fed{
+    background: url(img/doc1.png);
+    background-size: cover;
+  }
+  .gam{
+    background: url(img/doc2.png);
+    background-size: cover;
+  }
+  .ari{
+    background: url(img/doc3.png);
+    background-size: cover;
+  }
+
+}
+.map{
+  margin: 60px 37px 50px 37px;
+  width: 950px;
+  height: 300px;
+}
+.onMap{
+  width: 365px;
+  height: 240px;
+  background: rgba(255,255,255,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 9999;
+  right: 37px;
+  bottom: 100px;
+  img{
+    margin-right: 20px;
+  }
+  .mapInfo{
+    color: rgb(231, 100, 38);
+    font-size: large;
+  }
+}
+.copyRight{
+  margin: 0 37px 15px 37px;
+  font-size: 10px;
+  color: rgb(173,173,173);
+}
+.askForm{
+  position: absolute;
+  height: 2421px;
+  width: 100%;
+  background: rgba(54, 61, 61, 0.9);
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  .askContent{
+    position: fixed;
+    top: calc(50% - 300px);
+    left: calc(50% - 350px);
+    width: 682px;
+    height: 581px;
+    background: white;
+    .askTitle{
+      background: #E76426;
+      font-size: 30px;
+      color: white;
+      width: 100%;
+      height: 100px;
+      padding: 30px 15px;
+    }
+    .askMain{
+      padding: 60px 50px 60px 25px;
+      height: 81%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      div{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        input {
+          width: 380px;
+          height: 40px;
+          border: 1px solid #E76426;
+          padding-left: 5px;
+        }
+        #askQuestion {
+          width: 380px;
+          height: 160px;
+          border: 1px solid #E76426;
+          padding: 5px;
+          resize: none;
+        }
+      }
+      button{
+        width: 380px;
+        height: 45px;
+        background: #E76426;
+        font-size: 20px;
+        color: white;
+        border-radius: 0;
+
+      }
+    }
+
+  }
+  img{
+    position: fixed;
+    top: calc(50% - 270px);
+    left: calc(50% + 350px);
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css"/>
+    <meta charset="UTF-8">
+    <title>Отделение урологии</title>
+</head>
+<body>
+<div id="application"></div>
+<script type="text/javascript" src="js/app.js" charset="utf-8"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=Map,Placemark" type="text/javascript"></script>
+<script type="text/javascript">
+    ymaps.ready(init);
+    var myMap, myPlacemark;
+    function init(){
+        myMap = new ymaps.Map("map", {
+            center: [55.576824084685526, 37.9071694755554],
+            zoom: 16
+        });
+        myPlacemark = new ymaps.Placemark([55.576390, 37.901802], {
+            hintContent: 'Отделение Урологии',
+            balloonContent: 'Отделение Урологии'
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+</script>
+</body>
+</html>

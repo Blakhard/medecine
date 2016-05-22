@@ -1,0 +1,708 @@
+ul {
+  list-style-type: square; }
+
+#application {
+  background: lightgrey;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: scroll; }
+
+input::-webkit-input-placeholder {
+  color: #E76426; }
+
+input::-moz-placeholder {
+  color: #E76426; }
+
+input:-moz-placeholder {
+  color: #E76426; }
+
+input:-ms-input-placeholder {
+  color: #E76426; }
+
+textarea::-webkit-input-placeholder {
+  color: #E76426; }
+
+textarea::-moz-placeholder {
+  color: #E76426; }
+
+textarea:-moz-placeholder {
+  color: #E76426; }
+
+textarea:-ms-input-placeholder {
+  color: #E76426; }
+
+.backgroundImg {
+  background-image: url(img/background.png);
+  background-attachment: fixed;
+  background-size: cover; }
+
+.hideImg img {
+  display: none; }
+
+.hideImg .enroll {
+  background: #1bb4bd; }
+
+.hideImg .rightPanel .order {
+  padding-top: 98px; }
+
+.hideImg .rightPanel .freqQuestions {
+  padding-top: 75px; }
+
+.hideImg .rightPanel .ask {
+  padding-top: 85px; }
+
+.hideImg .illnesses {
+  background: white;
+  color: black; }
+  .hideImg .illnesses .illnessesInfo {
+    display: inherit;
+    background: white;
+    color: black; }
+  .hideImg .illnesses .illnessesBtn {
+    position: relative;
+    top: -80px; }
+
+.hideImg .illnesses:hover .illnessesBtn {
+  background: rgba(27, 180, 189, 0.9);
+  margin: 0; }
+
+.hideImg .diagnostic {
+  background: white;
+  color: black; }
+  .hideImg .diagnostic .diagnosticInfo {
+    display: inherit;
+    background: white;
+    color: black; }
+  .hideImg .diagnostic .diagnosticBtn {
+    position: relative;
+    top: -80px; }
+
+.hideImg .diagnostic:hover .diagnosticBtn {
+  background: rgba(27, 180, 189, 0.9);
+  margin: 0; }
+
+.hideImg .recommendations {
+  background: white;
+  color: black; }
+  .hideImg .recommendations .recommendationsInfo {
+    display: inherit;
+    background: white;
+    color: black; }
+  .hideImg .recommendations .recommendationsBtn {
+    position: relative;
+    top: -80px; }
+
+.hideImg .recommendations:hover .recommendationsBtn {
+  background: rgba(27, 180, 189, 0.9);
+  margin: 0; }
+
+.hideImg .advantages .advInfo .advInfoTextElem img {
+  display: inline; }
+
+.hideImg .advantages .advFooter img {
+  display: inline; }
+
+.hideImg .doctors .doctor {
+  background: white;
+  color: black; }
+  .hideImg .doctors .doctor .docHide {
+    display: inherit;
+    background: white;
+    color: black; }
+  .hideImg .doctors .doctor .docInfo {
+    position: relative;
+    top: -112px; }
+  .hideImg .doctors .doctor .docInfo:hover {
+    top: -112px; }
+
+.hideImg .askForm img {
+  display: block; }
+
+.fontDisabled {
+  font-size: 20px; }
+  .fontDisabled .headerAddress {
+    -ms-flex-align: center;
+        -ms-grid-row-align: center;
+        align-items: center; }
+  .fontDisabled #inputForm {
+    font-size: 20px; }
+    .fontDisabled #inputForm #menuInput {
+      font-size: 20px; }
+  .fontDisabled .enroll {
+    font-size: 22px; }
+  .fontDisabled .illnesses .illnessesInfo {
+    font-size: 20px;
+    line-height: 1.2; }
+  .fontDisabled .diagnostic .diagnosticInfo {
+    font-size: 20px;
+    line-height: 1.2; }
+  .fontDisabled .rightPanel {
+    font-size: 16px; }
+  .fontDisabled .advantages .advInfo .advInfoText {
+    font-size: 18px;
+    margin: 10px 10px 0 20px; }
+  .fontDisabled .advantages .advFooter .centerInfo {
+    width: 840px; }
+    .fontDisabled .advantages .advFooter .centerInfo .advFooterInfo {
+      font-size: 22px; }
+    .fontDisabled .advantages .advFooter .centerInfo .methods {
+      font-size: 36px; }
+  .fontDisabled .doctors .doctor .docHide {
+    font-size: 20px; }
+  .fontDisabled .doctors .doctor .docInfo .lastName {
+    font-size: 36px; }
+  .fontDisabled .doctors .doctor .docInfo .firstName {
+    font-size: 20px; }
+  .fontDisabled .onMap {
+    bottom: 110px; }
+    .fontDisabled .onMap .mapInfo {
+      font-size: 20px; }
+
+#inputForm {
+  width: 220px;
+  height: 58px; }
+  #inputForm #menuInput {
+    width: 220px;
+    height: 58px;
+    padding: 20px 55px 20px 20px;
+    color: #e76426;
+    border: 1px solid #e76426;
+    outline: none;
+    font-size: 15px; }
+  #inputForm img {
+    position: relative;
+    top: -58px;
+    left: 160px; }
+  #inputForm img:hover {
+    cursor: pointer; }
+
+.container {
+  background: white;
+  position: relative;
+  padding: 0;
+  width: 1024px; }
+
+.disabled {
+  position: fixed;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 1024px;
+  padding: 10px 37px;
+  background: #f1eff0;
+  z-index: 100; }
+  .disabled .largeFont {
+    background: white;
+    font-size: 22px;
+    line-height: 1;
+    padding: 2px 6px;
+    cursor: pointer; }
+  .disabled .showImages {
+    font-size: large;
+    margin: 0 29px 0 25px;
+    cursor: pointer; }
+
+.onSticky {
+  margin-bottom: 148px; }
+
+.menuHeader {
+  padding: 71px 37px 110px 37px; }
+  .menuHeader img {
+    float: left;
+    margin-right: 15px; }
+  .menuHeader .headerName {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: baseline;
+        align-items: baseline; }
+    .menuHeader .headerName h1 {
+      margin: 0; }
+    .menuHeader .headerName h3 {
+      margin: 0 0 0 auto;
+      display: -ms-flexbox;
+      display: flex; }
+      .menuHeader .headerName h3 div {
+        color: #1bb4bd; }
+  .menuHeader .headerAddress {
+    margin-top: 3px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: end;
+        align-items: flex-end; }
+    .menuHeader .headerAddress img {
+      margin-left: 10px;
+      float: none; }
+
+#menu {
+  padding: 5px 37px;
+  background: white;
+  z-index: 100;
+  width: 1024px; }
+  #menu .firstRow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin-bottom: 7px; }
+  #menu .secondRow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin-bottom: 7px; }
+  #menu .menuButton {
+    width: 220px;
+    height: 58px;
+    cursor: pointer;
+    border: solid #f1eff0;
+    border-width: 5px 2px 2px 2px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    #menu .menuButton a {
+      text-decoration: none;
+      color: black; }
+  #menu .menuButton:hover {
+    border-top-color: #1bb4bd;
+    font-weight: bold; }
+
+.menuSticky {
+  position: fixed;
+  top: 46px; }
+
+.enroll {
+  height: 100px;
+  margin: 5px 37px 0 37px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  color: white;
+  font-size: larger;
+  background-image: url(img/enrollBackground.png);
+  background-size: cover; }
+
+.enroll:hover {
+  cursor: pointer;
+  font-weight: bold; }
+
+.rightPanel .order, .rightPanel .freqQuestions, .rightPanel .ask {
+  height: 180px;
+  width: 224px;
+  color: #1bb4bd;
+  padding-left: 15px;
+  padding-right: 20px; }
+  .rightPanel .order div, .rightPanel .freqQuestions div, .rightPanel .ask div {
+    margin-top: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: end;
+        align-items: flex-end; }
+    .rightPanel .order div .text, .rightPanel .freqQuestions div .text, .rightPanel .ask div .text {
+      cursor: default;
+      width: 120px; }
+
+.rightPanel .showSeparator, .rightPanel .hideSeparator {
+  height: 4px;
+  width: 224px;
+  margin: 8px 0; }
+
+.info {
+  margin: 60px 37px 0 37px;
+  height: 600px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-line-pack: justify;
+      align-content: space-between; }
+
+.illnesses {
+  width: 460px;
+  height: 300px;
+  background: url(img/illnessesBg.png);
+  background-size: cover; }
+  .illnesses .illnessesInfo {
+    height: 300px;
+    padding: 30px 15px 0 15px;
+    font-size: 15px;
+    background: rgba(38, 55, 56, 0.85);
+    color: white;
+    position: relative;
+    z-index: 5;
+    display: none; }
+    .illnesses .illnessesInfo ul {
+      margin-top: 0px;
+      padding-left: 22px; }
+      .illnesses .illnessesInfo ul li {
+        margin-top: 3px; }
+  .illnesses .illnessesBtn {
+    height: 60px;
+    font-size: larger;
+    color: white;
+    background: rgba(27, 180, 189, 0.9);
+    margin: 0 10px;
+    top: 220px;
+    position: relative;
+    z-index: 10;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    cursor: pointer; }
+
+.illnesses:hover .illnessesInfo {
+  display: inherit; }
+
+.illnesses:hover .illnessesBtn {
+  top: -80px;
+  margin: 0;
+  background: rgba(27, 180, 189, 0.3); }
+
+.diagnostic {
+  width: 215px;
+  height: 300px;
+  background: url(img/diagnosticBg.png); }
+  .diagnostic .diagnosticInfo {
+    height: 300px;
+    padding: 30px 15px 0 20px;
+    font-size: 15px;
+    background: rgba(38, 55, 56, 0.85);
+    color: white;
+    position: relative;
+    z-index: 5;
+    display: none; }
+    .diagnostic .diagnosticInfo ul {
+      margin-top: 0px;
+      padding-left: 20px; }
+      .diagnostic .diagnosticInfo ul li {
+        margin-top: 3px; }
+  .diagnostic .diagnosticBtn {
+    height: 60px;
+    font-size: larger;
+    color: white;
+    background: rgba(27, 180, 189, 0.9);
+    margin: 0 10px;
+    top: 220px;
+    position: relative;
+    z-index: 10;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    cursor: pointer; }
+
+.diagnostic:hover .diagnosticInfo {
+  display: inherit; }
+
+.diagnostic:hover .diagnosticBtn {
+  top: -80px;
+  margin: 0;
+  background: rgba(27, 180, 189, 0.3); }
+
+.recommendations {
+  width: 700px;
+  height: 260px;
+  background: url(img/recomendationsBg.png);
+  background-size: cover;
+  position: relative;
+  top: -256px; }
+  .recommendations .recommendationsInfo {
+    height: 260px;
+    padding: 30px 15px 0 15px;
+    font-size: 15px;
+    background: rgba(38, 55, 56, 0.85);
+    color: white;
+    position: relative;
+    z-index: 5;
+    display: none; }
+    .recommendations .recommendationsInfo ul {
+      margin-top: 10px;
+      padding-left: 20px; }
+      .recommendations .recommendationsInfo ul li {
+        margin-top: 3px; }
+  .recommendations .recommendationsBtn {
+    height: 60px;
+    font-size: larger;
+    color: white;
+    background: rgba(27, 180, 189, 0.9);
+    margin: 0 10px;
+    top: 180px;
+    position: relative;
+    z-index: 10;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    cursor: pointer; }
+
+.recommendations:hover .recommendationsInfo {
+  display: inherit; }
+
+.recommendations:hover .recommendationsBtn {
+  top: -80px;
+  margin: 0;
+  background: rgba(27, 180, 189, 0.3); }
+
+.rightPanel {
+  font-size: 14px; }
+  .rightPanel .textContainer {
+    width: 195px; }
+  .rightPanel .order {
+    cursor: pointer;
+    padding-top: 50px;
+    padding-bottom: 10px; }
+  .rightPanel .order:hover {
+    border: 4px solid #1bb4bd;
+    font-weight: bold; }
+  .rightPanel .freqQuestions {
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .rightPanel .freqQuestions:hover {
+    border: 4px solid #1bb4bd;
+    font-weight: bold; }
+  .rightPanel .ask {
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .rightPanel .ask:hover {
+    border: 4px solid #1bb4bd;
+    font-weight: bold; }
+  .rightPanel .showSeparator {
+    background: #f1eff0; }
+  .rightPanel .hideSeparator {
+    background: white; }
+
+.advantages {
+  margin: 45px 37px 0 37px;
+  border-top: 3px solid #e76426;
+  border-bottom: 3px solid #e76426;
+  padding-top: 20px; }
+  .advantages .advTitle {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #e76426; }
+  .advantages .advInfo {
+    width: 90%;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .advantages .advInfo .advInfoText {
+      margin: 10px 40px 0 60px;
+      height: 160px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+      .advantages .advInfo .advInfoText .advInfoTextElem {
+        margin: 7px 0; }
+  .advantages .advFooter {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: -ms-flexbox;
+    display: flex; }
+    .advantages .advFooter .centerInfo {
+      margin-left: auto;
+      margin-right: auto;
+      width: 85%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center; }
+      .advantages .advFooter .centerInfo .advFooterInfo {
+        font-size: 20px; }
+      .advantages .advFooter .centerInfo .methods {
+        color: #e76426;
+        font-size: 30px; }
+    .advantages .advFooter i {
+      color: #e76426; }
+
+.advantages:hover {
+  cursor: pointer; }
+
+.doctors {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 60px 37px 0 37px; }
+  .doctors .doctor {
+    width: 295px;
+    height: 360px; }
+    .doctors .doctor .docHide {
+      display: none;
+      padding: 30px 15px 0 15px;
+      font-size: 15px;
+      height: 360px;
+      color: white;
+      background: rgba(38, 55, 56, 0.85); }
+      .doctors .doctor .docHide ul {
+        margin-top: 10px;
+        padding-left: 20px; }
+        .doctors .doctor .docHide ul li {
+          margin-top: 3px; }
+  .doctors .docInfo {
+    height: 92px;
+    font-size: larger;
+    color: white;
+    background: rgba(27, 180, 189, 0.5);
+    margin: 0;
+    top: 248px;
+    position: relative;
+    z-index: 10;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    cursor: pointer; }
+    .doctors .docInfo .lastName {
+      font-size: 25px; }
+  .doctors .doctor:hover .docHide {
+    display: inherit; }
+  .doctors .doctor:hover .docInfo {
+    top: -112px; }
+  .doctors .fed {
+    background: url(img/doc1.png);
+    background-size: cover; }
+  .doctors .gam {
+    background: url(img/doc2.png);
+    background-size: cover; }
+  .doctors .ari {
+    background: url(img/doc3.png);
+    background-size: cover; }
+
+.map {
+  margin: 60px 37px 50px 37px;
+  width: 950px;
+  height: 300px; }
+
+.onMap {
+  width: 365px;
+  height: 240px;
+  background: rgba(255, 255, 255, 0.75);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: absolute;
+  z-index: 9999;
+  right: 37px;
+  bottom: 100px; }
+  .onMap img {
+    margin-right: 20px; }
+  .onMap .mapInfo {
+    color: #e76426;
+    font-size: large; }
+
+.copyRight {
+  margin: 0 37px 15px 37px;
+  font-size: 10px;
+  color: #adadad; }
+
+.askForm {
+  position: absolute;
+  height: 2421px;
+  width: 100%;
+  background: rgba(54, 61, 61, 0.9);
+  top: 0;
+  left: 0;
+  z-index: 10000; }
+  .askForm .askContent {
+    position: fixed;
+    top: calc(50% - 300px);
+    left: calc(50% - 350px);
+    width: 682px;
+    height: 581px;
+    background: white; }
+    .askForm .askContent .askTitle {
+      background: #E76426;
+      font-size: 30px;
+      color: white;
+      width: 100%;
+      height: 100px;
+      padding: 30px 15px; }
+    .askForm .askContent .askMain {
+      padding: 60px 50px 60px 25px;
+      height: 81%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+      .askForm .askContent .askMain div {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        width: 100%; }
+        .askForm .askContent .askMain div input {
+          width: 380px;
+          height: 40px;
+          border: 1px solid #E76426;
+          padding-left: 5px; }
+        .askForm .askContent .askMain div #askQuestion {
+          width: 380px;
+          height: 160px;
+          border: 1px solid #E76426;
+          padding: 5px;
+          resize: none; }
+      .askForm .askContent .askMain button {
+        width: 380px;
+        height: 45px;
+        background: #E76426;
+        font-size: 20px;
+        color: white;
+        border-radius: 0; }
+  .askForm img {
+    position: fixed;
+    top: calc(50% - 270px);
+    left: calc(50% + 350px); }
