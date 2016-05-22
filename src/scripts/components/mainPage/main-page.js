@@ -25,6 +25,12 @@ var MainPage = React.createClass({
             return (<AskForm/>)
         }
     },
+    renderFedor: function(){
+        if (this.props.fontSize){
+            return <Doctor doctor={config.fedorovBig}/>
+        }
+        return <Doctor doctor={config.fedorov}/>
+    },
     render: function () {
         const handleStateChange = (status) => {
 
@@ -54,7 +60,7 @@ var MainPage = React.createClass({
                     <Advantages/>
 
                     <div className="doctors">
-                        <Doctor doctor={config.fedorov}/>
+                        {this.renderFedor()}
                         <Doctor doctor={config.gamov}/>
                         <Doctor doctor={config.aristova}/>
                     </div>

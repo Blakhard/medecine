@@ -149,7 +149,8 @@ textarea:-ms-input-placeholder {
     .fontDisabled .advantages .advFooter .centerInfo .methods {
       font-size: 36px; }
   .fontDisabled .doctors .doctor .docHide {
-    font-size: 20px; }
+    font-size: 20px;
+    line-height: 1.2; }
   .fontDisabled .doctors .doctor .docInfo .lastName {
     font-size: 36px; }
   .fontDisabled .doctors .doctor .docInfo .firstName {

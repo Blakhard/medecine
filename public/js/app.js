@@ -21822,6 +21822,12 @@
 	            return React.createElement(AskForm, null);
 	        }
 	    },
+	    renderFedor: function renderFedor() {
+	        if (this.props.fontSize) {
+	            return React.createElement(Doctor, { doctor: _config2.default.fedorovBig });
+	        }
+	        return React.createElement(Doctor, { doctor: _config2.default.fedorov });
+	    },
 	    render: function render() {
 	        var handleStateChange = function handleStateChange(status) {
 
@@ -21853,7 +21859,7 @@
 	                React.createElement(
 	                    'div',
 	                    { className: 'doctors' },
-	                    React.createElement(Doctor, { doctor: _config2.default.fedorov }),
+	                    this.renderFedor(),
 	                    React.createElement(Doctor, { doctor: _config2.default.gamov }),
 	                    React.createElement(Doctor, { doctor: _config2.default.aristova })
 	                ),
@@ -21993,6 +21999,13 @@
 	        class: 'doctor fed',
 	        title: 'ВРАЧ',
 	        list: ["уролог, онкоролог, андролог", "врач высшей кв. категории", "член европейской (EAU) и Американской Ассоциации Урологов(AUA)", "специалист по эндоскопии и дапароскопии"],
+	        lastName: 'ФЁДОРОВ',
+	        firstName: 'ДАНИИЛ ПЕТРОВИЧ'
+	    },
+	    fedorovBig: {
+	        class: 'doctor fed',
+	        title: 'ВРАЧ',
+	        list: ["уролог, онкоролог...", "врач высшей кв. к...", "член европейской (EAU) и Американской Ассоциации Урологов(AUA)", "специалист по эндо..."],
 	        lastName: 'ФЁДОРОВ',
 	        firstName: 'ДАНИИЛ ПЕТРОВИЧ'
 	    },
