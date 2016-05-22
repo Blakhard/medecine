@@ -6,9 +6,9 @@ import classnames from 'classnames'
 import config from './config';
 
 
-var Disabled = require('./disabled');
+var Disabled = require('./../common-components/disabled');
 var MenuHeader = require('./menu-header');
-var Menu = require('./menu');
+var Menu = require('./../common-components/menu');
 var Enroll = require('./enroll');
 var Info = require('./info');
 var Advantages = require('./advantages');

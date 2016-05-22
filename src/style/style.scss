@@ -1,9 +1,10 @@
 $blue: rgb(27, 180, 189);
 $grey: rgb(241, 239, 240);
 $margin: 0 37px;
-ul{
+ul {
   list-style-type: square;
 }
+
 #application {
   background: lightgrey;
   position: fixed;
@@ -11,23 +12,53 @@ ul{
   width: 100%;
   overflow: scroll;
 }
-input::-webkit-input-placeholder {color:#E76426;}
-input::-moz-placeholder          {color:#E76426;}
-input:-moz-placeholder           {color:#E76426;}
-input:-ms-input-placeholder      {color:#E76426;}
-textarea::-webkit-input-placeholder {color:#E76426;}
-textarea::-moz-placeholder          {color:#E76426;}
-textarea:-moz-placeholder           {color:#E76426;}
-textarea:-ms-input-placeholder      {color:#E76426;}
+
+input::-webkit-input-placeholder {
+  color: #E76426;
+}
+
+input::-moz-placeholder {
+  color: #E76426;
+}
+
+input:-moz-placeholder {
+  color: #E76426;
+}
+
+input:-ms-input-placeholder {
+  color: #E76426;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #E76426;
+}
+
+textarea::-moz-placeholder {
+  color: #E76426;
+}
+
+textarea:-moz-placeholder {
+  color: #E76426;
+}
+
+textarea:-ms-input-placeholder {
+  color: #E76426;
+}
 
 .backgroundImg {
-  background-image: url(img/background.png);
+  background-image: url(/img/background.png);
   background-attachment: fixed;
   background-size: cover;
 }
+
 .hideImg {
   img {
     display: none;
+  }
+  #inputForm {
+    img {
+      display: block;
+    }
   }
   .enroll {
     background: $blue;
@@ -102,123 +133,130 @@ textarea:-ms-input-placeholder      {color:#E76426;}
     }
   }
   .advantages {
-    .advInfo{
-      .advInfoTextElem{
-        img{
+    .advInfo {
+      .advInfoTextElem {
+        img {
           display: inline;
         }
       }
     }
-    .advFooter{
+    .advFooter {
       img {
         display: inline;
       }
     }
   }
-  .doctors{
-    .doctor{
+  .doctors {
+    .doctor {
       background: white;
       color: black;
-      .docHide{
+      .docHide {
         display: inherit;
         background: white;
         color: black;
       }
-      .docInfo{
+      .docInfo {
         position: relative;
         top: -112px;
       }
-      .docInfo:hover{
+      .docInfo:hover {
         top: -112px;
       }
     }
   }
-  .askForm{
-    img{
+  .askForm {
+    img {
       display: block;
     }
   }
 }
-.fontDisabled{
+
+.fontDisabled {
   font-size: 20px;
-  .headerAddress{
+  .headerAddress {
     align-items: center;
   }
-  #inputForm{
+  #inputForm {
     font-size: 20px;
-    #menuInput{
+    #menuInput {
       font-size: 20px;
     }
   }
-  .enroll{
+  .enroll {
     font-size: 22px;
   }
-  .illnesses{
-    .illnessesInfo{
+  .illnesses {
+    .illnessesInfo {
       font-size: 20px;
       line-height: 1.2;
     }
   }
-  .diagnostic{
-    .diagnosticInfo{
+  .diagnostic {
+    .diagnosticInfo {
       font-size: 20px;
       line-height: 1.2;
     }
   }
-  .recommendations{}
-  .rightPanel{
+  .recommendations {
+  }
+  .rightPanel {
     font-size: 16px;
   }
-  .advantages{
-    .advInfo{
-      .advInfoText{
+  .advantages {
+    .advInfo {
+      .advInfoText {
         font-size: 18px;
         margin: 10px 10px 0 20px;
       }
     }
-    .advFooter{
-      .centerInfo{
+    .advFooter {
+      .centerInfo {
         width: 840px;
-        .advFooterInfo{
+        .advFooterInfo {
           font-size: 22px;
         }
-        .methods{
+        .methods {
           font-size: 36px;
         }
 
       }
     }
   }
-  .doctors{
-    .doctor{
-      .docHide{
+  .doctors {
+    .doctor {
+      .docHide {
         font-size: 20px;
         line-height: 1.2;
       }
 
-      .docInfo{
-        .lastName{
+      .docInfo {
+        .lastName {
           font-size: 36px;
         }
-        .firstName{
+        .firstName {
           font-size: 20px;
         }
       }
     }
   }
-  .onMap{
+  .onMap {
     bottom: 110px;
-    .mapInfo{
+    .mapInfo {
       font-size: 20px;
+    }
+  }
+  .operations-content {
+    .o-c-title {
+      font-size: 36px;
     }
   }
 
 }
 
-#inputForm{
+#inputForm {
   width: 220px;
   height: 58px;
-  #menuInput{
+  #menuInput {
     width: 220px;
     height: 58px;
     padding: 20px 55px 20px 20px;
@@ -233,10 +271,11 @@ textarea:-ms-input-placeholder      {color:#E76426;}
     left: 160px;
 
   }
-  img:hover{
+  img:hover {
     cursor: pointer;
   }
 }
+
 .container {
   background: white;
   position: relative;
@@ -245,6 +284,7 @@ textarea:-ms-input-placeholder      {color:#E76426;}
   width: 1024px;
 
 }
+
 .disabled {
   position: fixed;
   display: inline-flex;
@@ -268,9 +308,11 @@ textarea:-ms-input-placeholder      {color:#E76426;}
   }
 
 }
+
 .onSticky {
   margin-bottom: 148px;
 }
+
 .menuHeader {
   padding: 71px 37px 110px 37px;
   img {
@@ -302,11 +344,16 @@ textarea:-ms-input-placeholder      {color:#E76426;}
     }
   }
 }
+
+.fixed {
+  position: fixed;
+  top: 46px;
+}
+
 #menu {
   padding: 5px 37px;
   background: white;
   z-index: 100;
-
   width: 1024px;
   .firstRow {
     display: flex;
@@ -327,22 +374,27 @@ textarea:-ms-input-placeholder      {color:#E76426;}
     display: flex;
     justify-content: center;
     align-items: center;
-    a {
-      text-decoration: none;
-      color: black;
-    }
+    text-decoration: none;
+    color: black;
+  }
+  .activeMenuElem {
+    border-top-color: $blue;
   }
   .menuButton:hover {
     border-top-color: $blue;
     font-weight: bold;
+    text-decoration: none;
   }
 }
+
 .menu {
 }
+
 .menuSticky {
   position: fixed;
   top: 46px;
 }
+
 .enroll {
   height: 100px;
   margin: 5px 37px 0 37px;
@@ -354,10 +406,12 @@ textarea:-ms-input-placeholder      {color:#E76426;}
   background-image: url(img/enrollBackground.png);
   background-size: cover;
 }
+
 .enroll:hover {
   cursor: pointer;
   font-weight: bold;
 }
+
 %showInfoBlocks {
   height: 180px;
   width: 224px;
@@ -375,11 +429,13 @@ textarea:-ms-input-placeholder      {color:#E76426;}
     }
   }
 }
+
 %separator {
   height: 4px;
   width: 224px;
   margin: 8px 0;
 }
+
 .info {
   margin: 60px 37px 0 37px;
   height: 600px;
@@ -389,6 +445,7 @@ textarea:-ms-input-placeholder      {color:#E76426;}
   align-items: flex-start;
   align-content: space-between;
 }
+
 .illnesses {
   width: 460px;
   height: 300px;
@@ -427,6 +484,7 @@ textarea:-ms-input-placeholder      {color:#E76426;}
     cursor: pointer;
   }
 }
+
 .illnesses:hover {
   .illnessesInfo {
     display: inherit;
@@ -437,6 +495,7 @@ textarea:-ms-input-placeholder      {color:#E76426;}
     background: rgba(27, 180, 189, 0.3);
   }
 }
+
 .diagnostic {
   width: 215px;
   height: 300px;
@@ -473,6 +532,7 @@ textarea:-ms-input-placeholder      {color:#E76426;}
     cursor: pointer;
   }
 }
+
 .diagnostic:hover {
   .diagnosticInfo {
     display: inherit;
@@ -483,6 +543,7 @@ textarea:-ms-input-placeholder      {color:#E76426;}
     background: rgba(27, 180, 189, 0.3);
   }
 }
+
 .recommendations {
   width: 700px;
   height: 260px;
@@ -523,6 +584,7 @@ textarea:-ms-input-placeholder      {color:#E76426;}
     cursor: pointer;
   }
 }
+
 .recommendations:hover {
   .recommendationsInfo {
     display: inherit;
@@ -533,9 +595,10 @@ textarea:-ms-input-placeholder      {color:#E76426;}
     background: rgba(27, 180, 189, 0.3);
   }
 }
+
 .rightPanel {
   font-size: 14px;
-  .textContainer{
+  .textContainer {
     width: 195px;
   }
   .order {
@@ -578,19 +641,20 @@ textarea:-ms-input-placeholder      {color:#E76426;}
   }
 
 }
-.advantages{
+
+.advantages {
   margin: 45px 37px 0 37px;
   border-top: 3px solid rgb(231, 100, 38);
   border-bottom: 3px solid rgb(231, 100, 38);
   padding-top: 20px;
-  .advTitle{
+  .advTitle {
     display: flex;
     justify-content: center;
     font-size: 30px;
     font-weight: bold;
     color: rgb(231, 100, 38);
   }
-  .advInfo{
+  .advInfo {
     width: 90%;
     margin-left: auto;
     margin-top: 20px;
@@ -598,7 +662,7 @@ textarea:-ms-input-placeholder      {color:#E76426;}
     display: flex;
     justify-content: center;
     align-items: center;
-    .advInfoText{
+    .advInfoText {
       margin: 10px 40px 0 60px;
       height: 160px;
       display: flex;
@@ -610,11 +674,11 @@ textarea:-ms-input-placeholder      {color:#E76426;}
       }
     }
   }
-  .advFooter{
+  .advFooter {
     margin-top: 40px;
     margin-bottom: 20px;
     display: flex;
-    .centerInfo{
+    .centerInfo {
 
       margin-left: auto;
       margin-right: auto;
@@ -623,32 +687,34 @@ textarea:-ms-input-placeholder      {color:#E76426;}
       justify-content: space-between;
       align-items: center;
 
-      .advFooterInfo{
+      .advFooterInfo {
         font-size: 20px;
       }
-      .methods{
+      .methods {
         color: rgb(231, 100, 38);
         font-size: 30px;
       }
     }
-    i{
+    i {
       color: rgb(231, 100, 38);
     }
   }
 }
-.advantages:hover{
+
+.advantages:hover {
   cursor: pointer;
 }
+
 .doctors {
   display: flex;
   justify-content: space-between;
   margin: 60px 37px 0 37px;
-  .doctor{
+  .doctor {
 
     width: 295px;
     height: 360px;
-    .docHide{
-      display:none;
+    .docHide {
+      display: none;
       padding: 30px 15px 0 15px;
       font-size: 15px;
       height: 360px;
@@ -677,41 +743,43 @@ textarea:-ms-input-placeholder      {color:#E76426;}
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    .lastName{
+    .lastName {
       font-size: 25px;
     }
   }
-  .doctor:hover{
-    .docHide{
+  .doctor:hover {
+    .docHide {
       display: inherit;
     }
-    .docInfo{
+    .docInfo {
       top: -112px;
     }
   }
-  .fed{
+  .fed {
     background: url(img/doc1.png);
     background-size: cover;
   }
-  .gam{
+  .gam {
     background: url(img/doc2.png);
     background-size: cover;
   }
-  .ari{
+  .ari {
     background: url(img/doc3.png);
     background-size: cover;
   }
 
 }
-.map{
+
+.map {
   margin: 60px 37px 50px 37px;
   width: 950px;
   height: 300px;
 }
-.onMap{
+
+.onMap {
   width: 365px;
   height: 240px;
-  background: rgba(255,255,255,0.75);
+  background: rgba(255, 255, 255, 0.75);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -719,20 +787,22 @@ textarea:-ms-input-placeholder      {color:#E76426;}
   z-index: 9999;
   right: 37px;
   bottom: 100px;
-  img{
+  img {
     margin-right: 20px;
   }
-  .mapInfo{
+  .mapInfo {
     color: rgb(231, 100, 38);
     font-size: large;
   }
 }
-.copyRight{
+
+.copyRight {
   margin: 0 37px 15px 37px;
   font-size: 10px;
-  color: rgb(173,173,173);
+  color: rgb(173, 173, 173);
 }
-.askForm{
+
+.askForm {
   position: absolute;
   height: 2421px;
   width: 100%;
@@ -740,14 +810,14 @@ textarea:-ms-input-placeholder      {color:#E76426;}
   top: 0;
   left: 0;
   z-index: 10000;
-  .askContent{
+  .askContent {
     position: fixed;
     top: calc(50% - 300px);
     left: calc(50% - 350px);
     width: 682px;
     height: 581px;
     background: white;
-    .askTitle{
+    .askTitle {
       background: #E76426;
       font-size: 30px;
       color: white;
@@ -755,14 +825,14 @@ textarea:-ms-input-placeholder      {color:#E76426;}
       height: 100px;
       padding: 30px 15px;
     }
-    .askMain{
+    .askMain {
       padding: 60px 50px 60px 25px;
       height: 81%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-end;
-      div{
+      div {
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -780,7 +850,7 @@ textarea:-ms-input-placeholder      {color:#E76426;}
           resize: none;
         }
       }
-      button{
+      button {
         width: 380px;
         height: 45px;
         background: #E76426;
@@ -792,9 +862,45 @@ textarea:-ms-input-placeholder      {color:#E76426;}
     }
 
   }
-  img{
+  img {
     position: fixed;
     top: calc(50% - 270px);
     left: calc(50% + 350px);
+  }
+}
+
+.operations-content {
+  margin-top: 186px;
+  padding: 70px 77px;
+  .links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    a {
+      margin: 10px;
+      color: lightgrey;
+      text-decoration: none;
+    }
+    .verSep {
+      border-left: 1px solid lightgrey;
+      height: 14px;
+    }
+    span {
+      margin: 10px;
+      color: $blue;
+    }
+  }
+  .o-c-title {
+    font-size: 30px;
+    margin: 0 0 30px 10px;
+  }
+  .o-c-links {
+    div {
+      border: 2px solid $grey;
+      color: $blue;
+      padding: 5px 171px 5px 50px;
+      margin: 15px 0;
+      cursor: pointer;
+    }
   }
 }

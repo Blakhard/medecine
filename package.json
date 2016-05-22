@@ -32,11 +32,12 @@
   },
   "scripts": {
     "start": "webpack",
-    "run": "webpack-dev-server --inline --hot",
+    "server": "webpack-dev-server --inline --content-base public --port 8325",
     "build": "webpack -p --config webpack.publish.config.js"
   },
   "dependencies": {
     "babel-preset-react": "^6.5.0",
+    "react-router": "^2.4.1",
     "react-sticky": "^5.0.0"
   }
 }
