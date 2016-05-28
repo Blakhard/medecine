@@ -40,6 +40,9 @@ textarea:-ms-input-placeholder {
 .hideImg img {
   display: none; }
 
+.hideImg #inputForm img {
+  display: block; }
+
 .hideImg .enroll {
   background: #1bb4bd; }
 
@@ -159,6 +162,8 @@ textarea:-ms-input-placeholder {
     bottom: 110px; }
     .fontDisabled .onMap .mapInfo {
       font-size: 20px; }
+  .fontDisabled .operations-content .o-c-title {
+    font-size: 36px; }
 
 #inputForm {
   width: 220px;
@@ -240,6 +245,10 @@ textarea:-ms-input-placeholder {
       margin-left: 10px;
       float: none; }
 
+.fixed {
+  position: fixed;
+  top: 46px; }
+
 #menu {
   padding: 5px 37px;
   background: white;
@@ -268,13 +277,15 @@ textarea:-ms-input-placeholder {
     -ms-flex-pack: center;
         justify-content: center;
     -ms-flex-align: center;
-        align-items: center; }
-    #menu .menuButton a {
-      text-decoration: none;
-      color: black; }
+        align-items: center;
+    text-decoration: none;
+    color: black; }
+  #menu .activeMenuElem {
+    border-top-color: #1bb4bd; }
   #menu .menuButton:hover {
     border-top-color: #1bb4bd;
-    font-weight: bold; }
+    font-weight: bold;
+    text-decoration: none; }
 
 .menuSticky {
   position: fixed;
@@ -535,6 +546,8 @@ textarea:-ms-input-placeholder {
           align-items: flex-start; }
       .advantages .advInfo .advInfoText .advInfoTextElem {
         margin: 7px 0; }
+        .advantages .advInfo .advInfoText .advInfoTextElem img {
+          margin-right: 5px; }
   .advantages .advFooter {
     margin-top: 40px;
     margin-bottom: 20px;
@@ -584,7 +597,7 @@ textarea:-ms-input-placeholder {
           margin-top: 3px; }
   .doctors .docInfo {
     height: 92px;
-    font-size: larger;
+    font-size: 16px;
     color: white;
     background: rgba(27, 180, 189, 0.5);
     margin: 0;
@@ -601,7 +614,7 @@ textarea:-ms-input-placeholder {
         align-items: center;
     cursor: pointer; }
     .doctors .docInfo .lastName {
-      font-size: 25px; }
+      font-size: 30px; }
   .doctors .doctor:hover .docHide {
     display: inherit; }
   .doctors .doctor:hover .docInfo {
@@ -707,3 +720,33 @@ textarea:-ms-input-placeholder {
     position: fixed;
     top: calc(50% - 270px);
     left: calc(50% + 350px); }
+
+.operations-content {
+  margin-top: 186px;
+  padding: 70px 77px; }
+  .operations-content .links {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center; }
+    .operations-content .links a {
+      margin: 10px;
+      color: lightgrey;
+      text-decoration: none; }
+    .operations-content .links .verSep {
+      border-left: 1px solid lightgrey;
+      height: 14px; }
+    .operations-content .links span {
+      margin: 10px;
+      color: #1bb4bd; }
+  .operations-content .o-c-title {
+    font-size: 30px;
+    margin: 0 0 30px 10px; }
+  .operations-content .o-c-links div {
+    border: 2px solid #f1eff0;
+    color: #1bb4bd;
+    padding: 5px 171px 5px 50px;
+    margin: 15px 0;
+    cursor: pointer; }

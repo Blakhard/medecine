@@ -21,7 +21,7 @@ var Menu = React.createClass({
     },
 
     handleScroll: function (event) {
-        if (document.getElementById('menuHeader')) return;
+        if (!document.getElementById('menuHeader')) return;
         var p = document.getElementById('menuHeader').getBoundingClientRect();
         if (p.bottom - 57 <= 0.1) {
             this.setState({sticky: true});

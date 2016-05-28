@@ -46,7 +46,7 @@ textarea:-ms-input-placeholder {
 }
 
 .backgroundImg {
-  background-image: url(/img/background.png);
+  background-image: url(img/background.png);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -671,6 +671,9 @@ textarea:-ms-input-placeholder {
       align-items: flex-start;
       .advInfoTextElem {
         margin: 7px 0;
+        img {
+          margin-right: 5px;
+        }
       }
     }
   }
@@ -731,7 +734,7 @@ textarea:-ms-input-placeholder {
   }
   .docInfo {
     height: 92px;
-    font-size: larger;
+    font-size: 16px;
     color: white;
     background: rgba(27, 180, 189, 0.50);
     margin: 0;
@@ -744,7 +747,7 @@ textarea:-ms-input-placeholder {
     align-items: center;
     cursor: pointer;
     .lastName {
-      font-size: 25px;
+      font-size: 30px;
     }
   }
   .doctor:hover {
